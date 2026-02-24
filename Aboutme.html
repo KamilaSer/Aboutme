@@ -7,29 +7,77 @@
 </head>
 
 <body>
+    <nav>
+        <ul style="list-style-type:none;">
+            <li><a href='#main'>Main</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#about">About deadlines</a></li>
+        </ul>
+    </nav>
+    <header>Website about me</header>
     <h1>My name is <strong>Kamila</strong></h1>
-    <p>I had a wonderful opportunity to learn programming for free with aitk.</p>
-    <p>Unfortunately, I had to stop attending classes due to personal reasons.</p>
+    <arcticle id="about">
+        <p>I had a wonderful opportunity to learn programming for free with aitk.</p>
+        <p>Unfortunately, I had to stop attending classes due to personal reasons.</p>
+        <hr>
+        <p>However, as you can see I have finally got my time on programing which I am eager to learn!</p>
+    </arcticle>
+    <main id="main">
+        <h5>
+            I enjoy:
+        </h5>
+        <ul>
+            <li>Learning new programming concepts;</li>
+            <li>Working on small projects;</li>
+            <li>Drawing;</li>
+        </ul>
+        <ol>
+            <li>I aim to become a skilled web developer;</li>
+            <li>I want to create my own website;</li>
+            <li>I hope to learn more about machine learning.</li>
+        </ol>
+        <img src="AITK/kitten.jpg" alt="A cute kitten" width="300" height="200">
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>My Skills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
     <hr>
-    <p>However, as you can see I have finally got my time on programing which I am eager to learn!</p>
-    <h5>
-        I enjoy:
-    </h5>
-    <ul>
-        <li>Learning new programming concepts;</li>
-        <li>Working on small projects;</li>
-        <li>Drawing;</li>
-    </ul>
-    <ol>
-        <li>I aim to become a skilled web developer;</li>
-        <li>I want to create my own website;</li>
-        <li>I hope to learn more about machine learning.</li>
-    </ol>
-    <img src="AITK/kitten.jpg" alt="A cute kitten" width="300" height="200">
-    <a href="https://github.com/KamilaSer" target="_blank">My rusty GitHUb account</a>
-
-
-
-</body>>
+    <section id="form">
+        <h4> To know more about you here is the form</h4>
+        <form action="library.php" method>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name:">
+            <button type="submit">Submit</button>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your email:">
+            <button type="submit">Submit</button>
+            <br>
+            <label for="message">I agree with sending this information</label>
+            <input type="checkbox" id="message" name="message" value="agree" required>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <div class="foot" id="contacts">
+            <a href="https://github.com/KamilaSer" target="_blank">My rusty GitHUb account</a>
+            <p>Contacts : xxxxxxxxxxx</p>
+        </div>
+    </footer>
+</body>
 
 </html>
